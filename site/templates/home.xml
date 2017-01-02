@@ -5,6 +5,7 @@
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection  include="animation_chain,page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
@@ -83,6 +84,54 @@
 				</div>
 
 			</section>
+
+			<!-- Section Gallery -->
+			<section class="gallery">
+				<!-- Gallery one right side -->
+				<div class="container right">
+					<a href="javascrip:void(0)" class="prev">
+						<cms:svg file="site_sprite.svg" symbol="left"/>
+					</a>
+					<cms:module
+						name="gallery"
+						group="studio"
+						action="show_image_list"
+						template="parts/gallery.xml"
+					/>
+					<a href="javascrip:void(0)" class="next">
+						<cms:svg file="site_sprite.svg" symbol="right"/>
+					</a>
+				</div>
+
+				<!-- Gallery two left side -->
+				<div class="container left">
+					<a href="javascrip:void(0)" class="prev">
+						<cms:svg file="site_sprite.svg" symbol="left"/>
+					</a>
+					<cms:module
+						name="gallery"
+						group="left_side"
+						action="show_image_list"
+						template="parts/gallery.xml"
+					/>
+					<a href="javascrip:void(0)" class="next">
+						<cms:svg file="site_sprite.svg" symbol="right"/>
+					</a>
+				</div>
+			</section>
+
+			<!-- Section features article list-->
+			<section class="features">
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="features"
+					template="stock/article_generic.xml"
+					>
+				<param name="title" value=""/>
+				</cms:module>
+			</section>
+
 		</body>
 	</html>
 </document>
