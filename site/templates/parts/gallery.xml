@@ -1,0 +1,15 @@
+<document>
+	<div class="portfolio">
+		<div class="titles">
+			<h2><cms:var param="title" multilanguage="yes"/></h2>
+			<h3><cms:var param="description" multilanguage="yes"/></h3>
+		</div>
+		<a href="$params['image']" cms:eval="href">
+			<img
+				src="gallery::getThumbnailById($params['id'], null, 550, Thumbnail::CONSTRAIN_BOTH)"
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+			/>
+		</a>
+	</div>
+</document>
