@@ -9,5 +9,12 @@
     "contact_page" : "צרו קשר",
     "main_header" : "טל דבורסקי אומנות בעץ",
     "form_constant" : "השאירו פרטים ונחזור אליכם עוד היום עם הצעה:",
-    "send":"שלח פרטים"
+    "send":"שלח פרטים",
+    "mobile_link":"054-7771050",
+    "fax_link":"072-2409898",
+    "location_link" : "כפר סירקין -מיקוד 4993500",
+    "email_link":"taldvorski@gmail.com",
+    "facebook" :"שתפו את האתר שלנו בפייסבוק",
+    "copyright_holder": "Developed by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>",
+    "copyright_text": "All rights reserved."
 }
