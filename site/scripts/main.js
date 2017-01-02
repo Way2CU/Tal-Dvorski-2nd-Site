@@ -63,7 +63,7 @@ Site.on_load = function() {
 	});
 
 	//Lightbox
-	Site.gallery = new LightBox('section.gallery div.portfolio a img', true, false, false);
+	Site.gallery = new LightBox('section.gallery div.portfolio a img', true, true, true);
 
 	//Gallery Carousel right
 	Site.gallery_carousel_right = new PageControl('div.container.right', 'div.portfolio');
