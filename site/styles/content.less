@@ -1,7 +1,158 @@
 /**
- * Content Style Sheet
- * Tal Dvorski Lp
- *
- * Copyright (c) 2016. by Way2CU, http://way2cu.com
- * Authors: Iliya Melishev
- */
+* Content Style Sheet
+* Tal Dvorski Lp
+*
+* Copyright (c) 2016. by Way2CU, http://way2cu.com
+* Authors: Iliya Melishev
+*/
+
+header {
+	padding: 0 calc(~'(100% - 1200px)' / 2 );
+	background-color: white;
+	box-shadow: 0px 6px 20px -6px rgba(0,0,0,0.61);
+}
+
+header nav {
+	display: block;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+header nav a.menu,
+header nav a.phone {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	padding: 1em;
+}
+
+header nav a.phone {
+	right: 0;
+	left: auto;
+}
+
+header nav svg.logo {
+	width: 100px;
+	height: 100px;
+}
+
+header nav a svg {
+	fill: @color_brown;
+	width: 35px;
+	height: 35px;
+}
+
+//Drodown
+
+header nav div.drop_down {
+	display: block;
+	width: 300px;
+	border: 1px solid @color_grey;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+	background-color: white;
+	box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.75);
+}
+
+
+header nav div.drop_down.visible {
+	visibility: visible;
+	opacity: 1;
+	top: 100%;
+}
+
+header nav div.drop_down a {
+	display: block;
+	width: 90%;
+	text-decoration: none;
+	color: @color_brown;
+	padding: 1em 0.5em;
+	border-bottom: 1px solid @color_grey;
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-weight: 700;
+}
+
+header nav div.drop_down a:hover {
+	color: fade(@color_brown, 30%);
+}
+
+header nav div.drop_down a:last-of-type {
+	border: none;
+}
+
+//Main Section
+section.discount {
+	padding-top: 100px;
+	padding: 0 calc(~'(100% - 1200px)' / 2 );
+	color: @color_brown;
+	background-image: url(../images/header.jpg);
+	background-position: calc(~'(50% - 300px)') top;
+	background-repeat: no-repeat;
+	background-size: 775px 517px;
+	position: relative;
+}
+
+section.discount h1 {
+	text-align: center;
+}
+
+section.discount img {
+	width: 400px;
+	height: auto;
+}
+
+#form {
+	background-color: @color_brown;
+	color: white;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+}
+
+#form form {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#form form label {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#form form label input {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em 0.5em;
+}
+
+#form form label span {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5em;
+}
+
+#form form div.controls {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 0.5em;
+}
+
+#form form div.controls button {
+	background-color: @color_yellow;
+	border: 1px solid black;
+	padding: 1em 2em;
+	font-weight: 700;
+	color: @color_brown;
+}
