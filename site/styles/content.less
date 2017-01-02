@@ -58,6 +58,7 @@ header nav div.drop_down {
 	transition: all 0.3s;
 	background-color: white;
 	box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.75);
+	z-index: 1;
 }
 
 
@@ -319,4 +320,88 @@ section.features article:nth-of-type(2) {
 }
 section.features article:nth-of-type(3) {
 	background-image: url(../images/taylor.jpg);
+}
+
+//Footer
+
+footer {
+	padding: 1em calc(~'(100% - 1200px)' / 2);
+	text-align: center;
+	position: relative;
+}
+
+footer h2 {
+	text-align: center;
+	border-bottom: 1px solid @color_grey;
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	color: @color_grey;
+	font-weight: 400;
+	padding-bottom: 1em;
+}
+
+footer > a {
+	display: inline-block;
+	vertical-align: middle;
+	width: 35%;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: @color_grey;
+	padding-bottom: 1em;
+	transition: all 0.3s;
+}
+
+footer > a:hover {
+	color: @color_yellow;
+}
+
+footer a svg {
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1em;
+}
+
+footer div.facebook  {
+	padding: 1em;
+	border: 1px solid @color_blue;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+footer div.facebook a {
+	color: @color_blue;
+	width: 100%;
+	padding: 0;
+}
+
+footer div.facebook a:hover {
+	color: lighten(@color_blue, 10%);
+}
+
+footer div.facebook svg {
+	padding-right: 1em;
+}
+
+footer div.copyright {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: black;
+	background-position: calc(~'50% - 80px') center;
+}
+
+footer div.copyright.light a,
+footer div.copyright.light {
+	color: white;
+}
+
+footer div.copyright.light a:hover {
+	color: @color_yellow;
 }
