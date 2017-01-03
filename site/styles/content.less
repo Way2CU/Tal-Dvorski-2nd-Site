@@ -19,6 +19,20 @@ header nav {
 	text-align: center;
 }
 
+header nav a {
+	color: @color_brown;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+header nav a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1em;
+}
+
 header nav a.menu,
 header nav a.phone {
 	position: absolute;
@@ -134,7 +148,7 @@ section.discount img {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: middle;
-	width: 240px;
+	width: calc(~'100% / 4');
 }
 
 #form form label input {
