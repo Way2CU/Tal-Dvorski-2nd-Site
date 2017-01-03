@@ -166,12 +166,6 @@
 					<cms:svg file="site_sprite.svg" symbol="email"/>
 					<cms:text constant="email_link" />
 				</a>
-				<div class="facebook">
-					<a href="#">
-						<cms:text constant="facebook" />
-						<cms:svg file="site_sprite.svg" symbol="facebook"/>
-					</a>
-				</div>
 			<cms:template file="stock/copyright.xml">
 					<param name="holder" value="copyright_holder"/>
 					<param name="text" value="copyright_text"/>
