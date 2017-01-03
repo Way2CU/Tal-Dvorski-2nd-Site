@@ -19,6 +19,7 @@
 						class="phone"
 						>
 						<cms:svg file="site_sprite.svg" symbol="phone"/>
+						<cms:text constant="phone" />
 					</a>
 
 					<!-- Main logo icon -->
