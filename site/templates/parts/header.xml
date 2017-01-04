@@ -1,0 +1,102 @@
+<header>
+	<cms:desktop>
+				<nav>
+					<!-- Phone svg icon -->
+					<a
+						href="'tel:'.urlencode(Language::get_Text('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:svg file="site_sprite.svg" symbol="phone"/>
+						<cms:text constant="phone" />
+					</a>
+
+					<!-- Main logo icon -->
+					<cms:svg file="site_sprite.svg" symbol="logo" class="logo" />
+
+					<!-- Menu icon -->
+					<a href="" class="menu">
+						<cms:svg file="site_sprite.svg" symbol="menu"/>
+					</a>
+					<!-- drop down menu -->
+					<div class="drop_down">
+
+						<!-- link landing page -->
+						<a href="#">
+							<cms:text constant="landing_page" />
+						</a>
+						<!-- link home page page -->
+						<a href="#">
+							<cms:text constant="home_page" />
+						</a>
+						<!-- link about us page -->
+						<a href="#">
+							<cms:text constant="about_us" />
+						</a>
+						<!-- link gallery page -->
+						<a href="#">
+							<cms:text constant="gallery" />
+						</a>
+						<!-- link articles page -->
+						<a href="#">
+							<cms:text constant="articles" />
+						</a>
+						<!-- link contact page -->
+						<a href="#">
+							<cms:text constant="contact_page" />
+						</a>
+
+					</div>
+
+				</nav>
+				</cms:desktop>
+				<cms:mobile>
+						<div class="mobile_title">
+							<!-- Phone svg icon -->
+							<a
+								href="'tel:'.urlencode(Language::get_Text('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:svg file="site_sprite.svg" symbol="phone"/>
+							</a>
+
+							<!-- Main logo icon -->
+							<cms:svg file="site_sprite.svg" symbol="logo" class="logo" />
+
+							<!-- Menu icon -->
+							<a href="" class="menu">
+								<cms:svg file="site_sprite.svg" symbol="menu"/>
+							</a>
+						</div>
+						<!-- drop down menu -->
+						<nav class="mobile_menu">
+
+							<!-- link landing page -->
+							<a href="#">
+								<cms:text constant="landing_page" />
+							</a>
+							<!-- link home page page -->
+							<a href="#">
+								<cms:text constant="home_page" />
+							</a>
+							<!-- link about us page -->
+							<a href="#">
+								<cms:text constant="about_us" />
+							</a>
+							<!-- link gallery page -->
+							<a href="#">
+								<cms:text constant="gallery" />
+							</a>
+							<!-- link articles page -->
+							<a href="#">
+								<cms:text constant="articles" />
+							</a>
+							<!-- link contact page -->
+							<a href="#">
+								<cms:text constant="contact_page" />
+							</a>
+						</nav>
+
+				</cms:mobile>
+			</header>
