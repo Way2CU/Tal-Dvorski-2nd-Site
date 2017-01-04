@@ -56,11 +56,14 @@ Site.on_load = function() {
 	Site.menu_desktop = document.querySelector('a.menu');
 	Site.menu_dropdown = document.querySelector('div.drop_down');
 
+	if(Site.menu_dropdown) {
 	//Click event toggle class visible
 	Site.menu_desktop.addEventListener('click', function(e) {
 		e.preventDefault();
 		Site.menu_dropdown.classList.toggle('visible');
 	});
+
+	};
 
 	//Lightbox
 	Site.gallery = new LightBox('section.gallery div.portfolio a img', true, true, true);
