@@ -380,28 +380,6 @@ footer a svg {
 	padding-left: 1em;
 }
 
-footer div.facebook  {
-	padding: 1em;
-	border: 1px solid @color_blue;
-	width: 50%;
-	display: block;
-	margin: 0 auto;
-}
-
-footer div.facebook a {
-	color: @color_blue;
-	width: 100%;
-	padding: 0;
-}
-
-footer div.facebook a:hover {
-	color: lighten(@color_blue, 10%);
-}
-
-footer div.facebook svg {
-	padding-right: 1em;
-}
-
 footer div.copyright {
 	position: absolute;
 	top: 100%;
@@ -418,4 +396,19 @@ footer div.copyright.light {
 
 footer div.copyright.light a:hover {
 	color: @color_yellow;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	section.gallery div.container.right {
+		margin: 0;
+		margin-bottom: 150px;
+	}
+
+	section.features article {
+		width: 250px;
+	}
+
+	section.features article:nth-of-type(2) {
+		padding: 300px 3em 0 3em;
+	}
 }
