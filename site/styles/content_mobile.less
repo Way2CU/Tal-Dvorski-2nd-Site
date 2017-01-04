@@ -1,0 +1,343 @@
+/**
+* Content_Mobile Style Sheet
+* Tal Dvorski Lp
+*
+* Copyright (c) 2016. by Way2CU, http://way2cu.com
+* Authors: Iliya Melishev
+*/
+
+header {
+	display: block;
+	width: 100%;
+	box-shadow: 0px 6px 20px -6px rgba(0,0,0,0.61);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+}
+
+header div.mobile_title {
+	display: block;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	background-color: white;
+}
+
+header div.mobile_title a {
+	color: @color_brown;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+header div.mobile_title a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1em;
+}
+
+header div.mobile_title a.menu,
+header div.mobile_title a.phone {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	padding: 1em;
+}
+
+header div.mobile_title a.phone {
+	right: 0;
+	left: auto;
+}
+
+header div.mobile_title svg.logo {
+	width: 70px;
+	height: 70px;
+	fill: @color_brown;
+}
+
+header div.mobile_title a svg {
+	fill: @color_brown;
+	width: 35px;
+	height: 35px;
+}
+
+//Drodown
+header nav.mobile_menu.visible {
+	display: block;
+	width: 100%;
+}
+
+header nav.mobile_menu a {
+	display: block;
+	width: 90%;
+	text-decoration: none;
+	color: @color_brown;
+	padding: 1em 0.5em;
+	border-bottom: 1px solid @color_grey;
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-weight: 700;
+}
+
+//Main Section
+section.discount {
+	margin-top: 80px;
+	color: @color_brown;
+	background-image: url(../images/mobile_header.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center 100px;
+	position: relative;
+}
+
+section.discount h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+section.discount img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	padding-top: 210px;
+}
+
+#form {
+	display: block;
+	width: 100%;
+}
+
+
+#form h3 {
+	margin: 0;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+#form form {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+#form form label {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+}
+
+#form form label input {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em 0.5em;
+	box-sizing: border-box;
+	width: calc(~'100% - 50px');
+	border: 1px solid black;
+	transition: all 0.3s;
+	margin-bottom: 1em;
+	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+#form form label span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+}
+
+#form form div.controls {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#form form div.controls button {
+	background-color: @color_yellow;
+	border: 1px solid black;
+	font-weight: 700;
+	color: @color_brown;
+	padding: 1em 2.5em;
+	cursor: pointer;
+	border-radius: 50px;
+	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+#form form div.controls button:hover {
+	animation-name: skew;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+//Section Gallery
+
+section.gallery {
+	text-align: center;
+	padding-top: 100px;
+}
+
+section.gallery div.container {
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 213px;
+	width: 320px;
+	position: relative;
+	padding: 100px 0;
+}
+
+section.gallery div.container.right {
+
+}
+
+section.gallery div.container div.portfolio {
+	width: 320px;
+	height: 213px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+section.gallery div.container div.portfolio.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+section.gallery div.container div.portfolio img {
+	display: block;
+}
+
+section.gallery div.portfolio div.titles {
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: @color_brown;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+section.gallery div.portfolio div.titles h2 {
+	margin: 0;
+}
+
+section.gallery div.portfolio div.titles h3 {
+	margin: 0;
+	font-weight: 400;
+	padding-top: 0.5em;
+}
+
+section.gallery div.container div.portfolio a {
+	display: block;
+	width: 320px;
+	height: 213px;
+}
+
+section.gallery div.container a {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+section.gallery div.container a.prev {
+	left: 0;
+	z-index: 1;
+}
+
+section.gallery div.container a.next {
+	right: 0;
+	z-index: 1;
+}
+
+section.gallery div.container a svg {
+	fill: white;
+	width: 35px;
+	height: 35px;
+	padding: 1em;
+}
+
+//Section features
+
+section.features {
+	padding: 0 1em;
+	text-align: center;
+}
+
+section.features article {
+	display: block;
+	padding-top: 200px;
+	background-position: center top;
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}
+
+section.features article h2 {
+	margin: 0;
+	color: @color_brown;
+}
+
+section.features article:nth-of-type(1) {
+	background-image: url(../images/5_years.jpg);
+}
+
+section.features article:nth-of-type(2) {
+	background-image: url(../images/tree.jpg);
+}
+section.features article:nth-of-type(3) {
+	background-image: url(../images/taylor.jpg);
+}
+
+//Footer
+
+footer {
+	padding: 0 1em;
+	position: relative;
+	padding-top: 1em;
+}
+
+footer h2 {
+	text-align: center;
+	border-bottom: 1px solid @color_grey;
+	display: block;
+	margin: 0 auto;
+	color: @color_grey;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+footer > a {
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+	color: @color_grey;
+	padding-bottom: 1em;
+}
+
+footer a svg {
+	width: 2em;
+	height: 2em;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1em;
+	padding-right: 10%;
+}
+
+footer div.copyright {
+	text-align: center;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: black;
+	background-position: calc(~'50% - 80px') center;
+}
+
+footer div.copyright.light a,
+footer div.copyright.light {
+	color: white;
+}
