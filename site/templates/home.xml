@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
@@ -20,6 +19,13 @@
 				<h1><cms:text constant="main_header" /></h1>
 
 				<!-- Discount image -->
+				<cms:mobile>
+					<img
+						src="_BASEURL.'/site/images/header.jpg'"
+						alt="designed_desk"
+						cms:eval="src"
+						/>
+				</cms:mobile>
 				<img
 					src="_BASEURL.'/site/images/discount.png'"
 					alt="70% discount"
