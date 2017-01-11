@@ -1,12 +1,12 @@
 ---
 site:
-  domain: sample.com
-  # subdomain: test
+  domain: talart.co.il
+  subdomain: lp
   # alias: domain.com
-  root: httpdocs
-  username: sample
-  caracal_branch: master
-  # ip_address: 0.0.0.0
+  root: lp
+  username: talart
+  caracal_branch: release
+  ip_address: 198.251.79.74
   # owner: Some Person
   # plan: Unlimited
   # database_type: 'mysql'
