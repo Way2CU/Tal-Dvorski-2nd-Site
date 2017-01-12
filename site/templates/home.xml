@@ -47,8 +47,11 @@
 
 			<!-- Section Gallery -->
 			<section class="gallery">
+				<h2><cms:text constant="from_tals_studio" /></h2>
 				<!-- Gallery one right side -->
 				<div class="container right">
+					<h3><cms:text constant="right_title" /></h3>
+
 					<a href="javascrip:void(0)" class="prev">
 						<cms:svg file="site_sprite.svg" symbol="left"/>
 					</a>
@@ -65,6 +68,8 @@
 
 				<!-- Gallery two left side -->
 				<div class="container left">
+					<h3><cms:text constant="left_title" /></h3>
+
 					<a href="javascrip:void(0)" class="prev">
 						<cms:svg file="site_sprite.svg" symbol="left"/>
 					</a>
