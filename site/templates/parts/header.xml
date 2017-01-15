@@ -26,23 +26,23 @@
 							<cms:text constant="landing_page" />
 						</a>
 						<!-- link home page page -->
-						<a href="#">
+						<a href="http://talart.co.il">
 							<cms:text constant="home_page" />
 						</a>
 						<!-- link about us page -->
-						<a href="#">
+						<a href="http://talart.co.il/about">
 							<cms:text constant="about_us" />
 						</a>
 						<!-- link gallery page -->
-						<a href="#">
+						<a href="http://talart.co.il/gallery">
 							<cms:text constant="gallery" />
 						</a>
 						<!-- link articles page -->
-						<a href="#">
+						<a href="http://talart.co.il/articles">
 							<cms:text constant="articles" />
 						</a>
 						<!-- link contact page -->
-						<a href="#">
+						<a href="http://talart.co.il/#contact">
 							<cms:text constant="contact_page" />
 						</a>
 
@@ -77,23 +77,23 @@
 								<cms:text constant="landing_page" />
 							</a>
 							<!-- link home page page -->
-							<a href="#">
+							<a href="http://talart.co.il">
 								<cms:text constant="home_page" />
 							</a>
 							<!-- link about us page -->
-							<a href="#">
+							<a href="http://talart.co.il/about">
 								<cms:text constant="about_us" />
 							</a>
 							<!-- link gallery page -->
-							<a href="#">
+							<a href="http://talart.co.il/gallery">
 								<cms:text constant="gallery" />
 							</a>
 							<!-- link articles page -->
-							<a href="#">
+							<a href="http://talart.co.il/articles">
 								<cms:text constant="articles" />
 							</a>
 							<!-- link contact page -->
-							<a href="#">
+							<a href="http://talart.co.il/#contact">
 								<cms:text constant="contact_page" />
 							</a>
 						</nav>
