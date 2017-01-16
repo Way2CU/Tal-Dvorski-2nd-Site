@@ -14,39 +14,39 @@
 					<!-- Main logo icon -->
 					<cms:svg file="site_sprite.svg" symbol="logo" class="logo" />
 
-					<!-- Menu icon -->
+					<!-- Menu icon
 					<a href="" class="menu">
 						<cms:svg file="site_sprite.svg" symbol="menu"/>
 					</a>
-					<!-- drop down menu -->
+					drop down menu
 					<div class="drop_down">
 
-						<!-- link landing page -->
+						link landing page
 						<a href="#">
 							<cms:text constant="landing_page" />
 						</a>
-						<!-- link home page page -->
+						link home page page
 						<a href="http://talart.co.il">
 							<cms:text constant="home_page" />
 						</a>
-						<!-- link about us page -->
+						link about us page
 						<a href="http://talart.co.il/about">
 							<cms:text constant="about_us" />
 						</a>
-						<!-- link gallery page -->
+						link gallery page
 						<a href="http://talart.co.il/gallery">
 							<cms:text constant="gallery" />
 						</a>
-						<!-- link articles page -->
+						link articles page
 						<a href="http://talart.co.il/articles">
 							<cms:text constant="articles" />
 						</a>
-						<!-- link contact page -->
+						link contact page
 						<a href="http://talart.co.il/#contact">
 							<cms:text constant="contact_page" />
 						</a>
 
-					</div>
+					</div> -->
 
 				</nav>
 				</cms:desktop>
@@ -63,40 +63,40 @@
 
 							<!-- Main logo icon -->
 							<cms:svg file="site_sprite.svg" symbol="logo" class="logo" />
-
-							<!-- Menu icon -->
+<!--
+							Menu icon
 							<a href="" class="menu">
 								<cms:svg file="site_sprite.svg" symbol="menu"/>
-							</a>
+							</a> -->
 						</div>
 						<!-- drop down menu -->
-						<nav class="mobile_menu">
+						<!-- <nav class="mobile_menu">
 
-							<!-- link landing page -->
+							link landing page
 							<a href="#">
 								<cms:text constant="landing_page" />
 							</a>
-							<!-- link home page page -->
+							link home page page
 							<a href="http://talart.co.il">
 								<cms:text constant="home_page" />
 							</a>
-							<!-- link about us page -->
+							link about us page
 							<a href="http://talart.co.il/about">
 								<cms:text constant="about_us" />
 							</a>
-							<!-- link gallery page -->
+							link gallery page
 							<a href="http://talart.co.il/gallery">
 								<cms:text constant="gallery" />
 							</a>
-							<!-- link articles page -->
+							link articles page
 							<a href="http://talart.co.il/articles">
 								<cms:text constant="articles" />
 							</a>
-							<!-- link contact page -->
+							link contact page
 							<a href="http://talart.co.il/#contact">
 								<cms:text constant="contact_page" />
 							</a>
-						</nav>
+						</nav> -->
 
 				</cms:mobile>
 			</header>
