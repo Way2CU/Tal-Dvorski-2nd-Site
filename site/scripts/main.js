@@ -65,9 +65,6 @@ Site.on_load = function() {
 
 	};
 
-	// //Lightbox
-	// Site.gallery = new LightBox('div.portfolio a', true, true, true);
-
 	//Gallery Carousel right
 	Site.gallery_carousel_right = new PageControl('div.container.right', 'div.portfolio');
 		Site.gallery_carousel_right
@@ -82,9 +79,16 @@ Site.on_load = function() {
 		.attachPreviousControl($('div.container.left a.prev'))
 		.setWrapAround(true);
 
+	// connect submission to Google Analytics
+	var push_event = function(data) {
+			dataLayer.push({
+				event: "leadSent"
+			});
+			return true;
+		};
 
-
-
+	for (var index in Caracal.ContactForm.list)
+		Caracal.ContactForm.list[index].events.connect('submit-success', push_event);
 };
 
 
