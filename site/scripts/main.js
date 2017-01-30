@@ -52,27 +52,25 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
-	//Menu button and dropDown div
+	// menu button and dropdown div
 	Site.menu_desktop = document.querySelector('a.menu');
 	Site.menu_dropdown = document.querySelector('div.drop_down');
 
-	if(Site.menu_dropdown) {
-	//Click event toggle class visible
-	Site.menu_desktop.addEventListener('click', function(e) {
-		e.preventDefault();
-		Site.menu_dropdown.classList.toggle('visible');
-	});
+	// click event toggle class visible
+	if (Site.menu_dropdown)
+		Site.menu_desktop.addEventListener('click', function(e) {
+			e.preventDefault();
+			Site.menu_dropdown.classList.toggle('visible');
+		});
 
-	};
-
-	//Gallery Carousel right
+	// gallery carousel right
 	Site.gallery_carousel_right = new PageControl('div.container.right', 'div.portfolio');
 		Site.gallery_carousel_right
 		.attachNextControl($('div.container.right a.next'))
 		.attachPreviousControl($('div.container.right a.prev'))
 		.setWrapAround(true);
 
-	//Gallery Carousel Left
+	// gallery carousel left
 	Site.gallery_carousel_left = new PageControl('div.container.left', 'div.portfolio');
 		Site.gallery_carousel_left
 		.attachNextControl($('div.container.left a.next'))
