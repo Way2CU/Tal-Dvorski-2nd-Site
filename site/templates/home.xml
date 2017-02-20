@@ -29,8 +29,8 @@
 						/>
 				</cms:mobile>
 				<img
-					src="_BASEURL.'/site/images/discount.png'"
-					alt="70% discount"
+					src="_BASEURL.'/site/images/discount30.jpg'"
+					alt="30% discount"
 					cms:eval="src"
 					/>
 
